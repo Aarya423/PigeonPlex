@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #04040c;
+    text-align: center;
+    font-family: 'YourFontName', sans-serif;
+}
+
+.titleDescription{
+    color: #D9DCD6;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(4, 17, 141, 1);
+}
+
+.navbar {
+    background-color: #040f3b;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0px 60px rgb(5, 47, 141);
+}
+
+.logo-img {
+    order: -1;
+}
+
+.navbar img {
+    height: 50px;
+    vertical-align: middle; /* Align the image vertically in the middle */
+}
+
+.right-image img {
+    padding-right: 15px;
+    height: 50px; /* Set the height to match the button */
+}
+
+#dates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dates select {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+#dates label {
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+
+.userInfo {
+    padding: 20px;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 50px;
+    background-color: #052f8d;
+    color: #D9DCD6;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    background-color: #040b27;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.column {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    color: #D9DCD6;
+}
+
+.column img {
+    padding-left: 100px;
+    width: 80%;
+    /* object-fit: contain; */
+}
+
+.dropDown{
+    background-color: #040b27;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: #D9DCD6;
+}
+.dropDown option{
+    font-size: 16px;
+    background-color: #040b27;
+    color: #D9DCD6;
+}
+
+.tickets {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.counter{
+    width: 50px;
+    height: 30px;
+    background-color: #040b27;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #D9DCD6;
+}
+
+.counterBtn {
+    width: 50px;
+    height: 50px;
+    background-color: #040b27;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #D9DCD6;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+.border {
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0px 30px rgb(5, 47, 141);
+}
+
+/* Style the select when it's focused */
+select:focus {
+    border-color: #2F6690;
+    box-shadow: 0 0 5px rgba(47, 102, 144, 0.5);
+}
+
+h1, h2, h4, p, label {
+    color: #D9DCD6;
+}
+
+h5 {
+    color: #949593;
+    font-size: 15px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 19px;
+    font-weight: normal;
+    padding: 10px;
+    margin: 0;
+}
+
+p {
+    font-size: 19px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 60px; /* Adjust the width as needed */
+    margin: 0 5px;
+    text-align: center;
+    outline: none;
+}
+
+#scrollbar5::-webkit-scrollbar {
+    background-color: transparent;
+    width: 12px;
+    border-radius: 10px;
+  }
+  
+  #scrollbar5::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+  
+  #scrollbar5::-webkit-scrollbar-thumb {
+    background-image: -webkit-linear-gradient(
+      bottom,
+      #0962b3 50%,
+      #040f3b 100%
+    );
+    border-radius: 10px;
+  }

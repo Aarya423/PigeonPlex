@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #040b27;
+    color: #D9DCD6;
+    font-family: 'YourFontName', sans-serif;
+}
+
+.navbar {
+    background-color: #040f3b;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0px 60px rgb(5, 47, 141);
+}
+
+.logo-img {
+    order: -1;
+}
+
+.navbar img {
+    height: 50px;
+    vertical-align: middle; /* Align the image vertically in the middle */
+}
+
+.right-image img {
+    padding-right: 15px;
+    height: 50px; /* Set the height to match the button */
+}
+
+.userInfo{
+    padding: 20px;
+}
+
+table {
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Makes the table span the full width of its container */
+    table-layout: fixed; /* Ensures the table layout is fixed */
+    border-collapse: collapse; /* Optional: collapses the borders between cells */
+}
+
+th, td {
+    padding: 8px; /* Adjust padding to your preference */
+    text-align: left; /* Aligns text to the left, adjust as needed */
+    border: 1px solid #ddd; /* Optional: adds a border to cells */
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #040f3b; /* Optional: styles the header cells */
+}
+
+tr {
+    background-color: #04145f;
+}
+
+tr:hover {
+    background-color: #052f8d;
+}
+
+::-webkit-calendar-picker-indicator {
+    color-scheme: dark;
+}
+
+/* Example to set specific widths for columns, adjust as needed */
+th:nth-child(1) { width: 10%; } /* Select column */
+th:nth-child(2) { width: 50%; }
+th:nth-child(3) { width: 15%; }
+th:nth-child(4) { width: 15%; }
+th:nth-child(5) { width: 10%; }
+
+
+.purchaseDiv, .refundDiv {
+    max-height: 400px; /* Adjust this value as needed */
+    overflow-y: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 50px rgba(5, 47, 141, 0.8);
+}
+button{
+    font-family: 'YourFontName', sans-serif;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #052f8d;
+    border: 1px solid #dcdcdc;
+    color: #D9DCD6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+tbody {
+    background-color: #04145f;
+}
+
+thead {
+    background-color: #040f3b;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-container div {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width as needed, and consider margin */
+    margin-bottom: 15px; /* Adjust the margin between rows */
+}
+
+
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px; /* Adjust the margin between label and input */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label, h1 {
+    color: #D9DCD6;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #040f3b;
+    color: #D9DCD6;
+    /* border: 1px solid #16425B; */
+    border-radius: 5px;
+}
+
+input:disabled {
+    background-color: #040b27;
+}
+
+input:focus {
+    outline: none;
+    border-color: #122F41;
+    box-shadow: 0 0 15px rgba(18, 47, 65, 0.5);
+}
+
+.save-btn {
+    margin-top: 20px;
+}
+
+.purchase {
+    padding: 20px;
+}
+
+.purchaseList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple rows */
+    justify-content: space-evenly;
+}
+
+.purchase-card {
+    background-color: #2F6690;
+    color: #D9DCD6;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex; /* Add this line to enable flexbox */
+    justify-content: space-between; /* Add this line to space out elements evenly */
+}
+
+.purchase-card h3 {
+    margin: 5px 0;
+    white-space: nowrap;
+}
+
+.purchase-card h3:not(:last-child) {
+    margin-right: 10px;
+}
+
+.refund {
+    padding: 20px;
+}
+
+.refundList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple rows */
+    justify-content: space-evenly;
+}
+
+.refund-card {
+    background-color: #D9DCD6;
+    color: #16425B;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex; /* Add this line to enable flexbox */
+    justify-content: space-between; /* Add this line to space out elements evenly */
+}
+
+.refund-card h3 {
+    margin: 5px 0;
+    white-space: nowrap;
+}
+
+.refund-card h3:not(:last-child) {
+    margin-right: 10px;
+}
+
+#scrollbar5::-webkit-scrollbar {
+    background-color: transparent;
+    width: 12px;
+    border-radius: 10px;
+  }
+  
+  #scrollbar5::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+  
+  #scrollbar5::-webkit-scrollbar-thumb {
+    background-image: -webkit-linear-gradient(
+      bottom,
+      #0962b3 50%,
+      #040f3b 100%
+    );
+    border-radius: 10px;
+  }

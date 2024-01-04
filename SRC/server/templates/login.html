@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>Login</title>
+        <meta name="description" content="Movie Theater">
+        <meta name="author" content="Sridhar Patel, Ohm Patel, Jeffano John, Aarya Patel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/login.css') }}">
+    </head>
+    <body>
+        <div class="blur-container">
+            <div class="login">
+                <img src="{{ url_for('static',filename='img/logo.png') }}">
+                <h1>LOGIN</h1>
+                <input type="text" name="username" id="uName" placeholder="Username" required="required" />
+                <input type="password" name="password" id="password" placeholder="Password" required="required" />
+                <button type="submit" id="loginBtn" class="btns">LOGIN</button>
+                <button type="submit" id="signUpBtn" class="btns">SIGN UP</button>
+                <label id="error"></label>
+            </div>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="module" src="{{ url_for('static',filename='scripts/login.js') }}"></script>
+    </body>
+</html>

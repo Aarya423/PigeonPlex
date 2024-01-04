@@ -1,0 +1,250 @@
+.header {
+    background-color: #04145f;
+    color: #D9DCD6;
+    padding: 10px 20px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0px 60px rgb(5, 47, 141);
+}
+
+label, h3{
+    color: #D9DCD6;
+}
+
+input{
+    color: #D9DCD6;
+    background-color: #052f8d;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040b27;;
+}
+
+h2 {
+    color: #D9DCD6; /* Change the font color */
+    font-size: 24px; /* Change the font size */
+    font-weight: bold; /* Make the font bold */
+    text-align: center; /* Align the text to the center */
+    margin-bottom: 20px; /* Add some space below the h1 */
+}
+
+button{
+    font-family: 'YourFontName', sans-serif;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #052f8d;
+    border: 1px solid #dcdcdc;
+    color: #D9DCD6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #040f3b;
+    padding: 20px;
+    box-shadow: 0 0 40px rgba(5, 47, 141, 0.6);
+    border-radius: 15px; /* Adjust this value to increase or decrease roundness */
+    text-align: center;
+}
+
+.movie-list {
+    background-color: #ffffff;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+
+.search-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 20px; /* Add some space between the grid items */
+    margin-bottom: 20px; /* Add some space below each row */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.addMovie-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 5px; /* Add space between label and input field */
+}
+
+.schedule-functions{
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 3 columns */
+    gap: 20px; /* Add some space between the grid items */
+    margin-bottom: 20px; /* Add some space below each row */
+}
+
+.schedule-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.date-format{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 5px; /* Add space between label and input field */
+}
+
+.movieID-field{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 5px; /* Add space between label and input field */
+}
+
+.output-box {
+    background-color: #ffffff;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.additional-feautes{
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%; /* Makes the table span the full width of its container */
+    table-layout: fixed; /* Ensures the table layout is fixed */
+    border-collapse: collapse; /* Optional: collapses the borders between cells */
+}
+
+th, td {
+    padding: 8px; /* Adjust padding to your preference */
+    text-align: left; /* Aligns text to the left, adjust as needed */
+    border: 1px solid #ddd; /* Optional: adds a border to cells */
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #f2f2f2; /* Optional: styles the header cells */
+}
+
+tr {
+    background-color: white;
+}
+
+/* Example to set specific widths for columns, adjust as needed */
+th:nth-child(1) { width: 10%; } /* Select column */
+th:nth-child(2) { width: 15%; }
+th:nth-child(3) { width: 20%; }
+
+
+.scrollable-table {
+    max-height: 400px; /* Adjust this value as needed */
+    overflow-y: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 50px rgba(5, 47, 141, 0.8);
+}
+
+tbody {
+    background-color: #04145f;
+}
+
+thead {
+    background-color: #040f3b;
+}
+
+.displayTotalCount{
+    margin-bottom: 10px;
+}
+
+table {
+    color: #D9DCD6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Makes the table span the full width of its container */
+    table-layout: fixed; /* Ensures the table layout is fixed */
+    border-collapse: collapse; /* Optional: collapses the borders between cells */
+}
+
+th, td {
+    padding: 8px; /* Adjust padding to your preference */
+    text-align: left; /* Aligns text to the left, adjust as needed */
+    border: 1px solid #ddd; /* Optional: adds a border to cells */
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #040f3b; /* Optional: styles the header cells */
+}
+
+tr {
+    background-color: #04145f;
+}
+
+tr:hover {
+    background-color: #052f8d;
+}
+
+::-webkit-calendar-picker-indicator {
+    color-scheme: dark;
+}
+
+#scrollbar5::-webkit-scrollbar {
+    background-color: transparent;
+    width: 12px;
+    border-radius: 10px;
+  }
+  
+  #scrollbar5::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+  
+  #scrollbar5::-webkit-scrollbar-thumb {
+    background-image: -webkit-linear-gradient(
+      bottom,
+      #0962b3 50%,
+      #040f3b 100%
+    );
+    border-radius: 10px;
+  }

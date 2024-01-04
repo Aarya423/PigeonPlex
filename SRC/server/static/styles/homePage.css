@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: 'YourFontName', sans-serif;
+    background-color: #04040c;
+}
+
+.navbar {
+    background-color: #040f3b;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0px 60px rgb(5, 47, 141);
+}
+
+.logo-img {
+    order: -1;
+}
+
+.navbar img {
+    height: 50px;
+    vertical-align: middle; /* Align the image vertically in the middle */
+}
+
+.right-image img {
+    padding-right: 15px;
+    height: 50px; /* Set the height to match the button */
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #16425B; */
+}
+
+.movieShowCase {
+    padding: 5%;
+}
+
+.moviesList, .moviesListOutput {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.movieInput, .dateInput{
+    background-color: #052f8d;
+    color: #D9DCD6;
+}
+
+::-webkit-calendar-picker-indicator {
+    color-scheme: dark;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    width: calc(20% - 20px); 
+    min-width: 200px; /* Set a minimum width for the movie cards */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #D9DCD6;
+    border-radius: 10px;
+    margin: 10px;
+    min-height: 250px; /* Set a minimum height for the movie cards */
+    box-shadow: 0 0px 60px rgb(5, 47, 141);
+    border: 3px solid #949593;
+}
+
+.movie:hover {
+    box-shadow: 0 0px 60px rgb(255, 255, 255);
+    border: 3px solid #16425B;
+}
+
+.featuredTitle{
+    color: #D9DCD6;
+    text-align: center;
+}
+
+.movie h1{
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.movie img {
+    max-width: 100%;
+    max-height: 100%; /* Set a maximum height to maintain aspect ratio */
+    height: auto;
+    border-radius: 8px; /* Add rounded corners to the image */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.search h2 {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.search input,
+.search button {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.movieSearch {
+    flex: 1;
+    text-align: center;
+    background-color: #040b27;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+input {
+    font-family: 'YourFontName', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #16425B;
+    border-radius: 5px;
+}
+
+.text{
+    color: #D9DCD6;
+}
+
+footer{
+    background-color: #040f3b;
+    color: #D9DCD6;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.errorText{
+    color: crimson;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #122F41;
+    box-shadow: 0 0 5px rgba(18, 47, 65, 0.5);
+}
+
+button{
+    font-family: 'YourFontName', sans-serif;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #052f8d;
+    border: 1px solid #dcdcdc;
+    color: #D9DCD6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.movieSearch h1 {
+    margin-top: 0;
+}
+
+#scrollbar5::-webkit-scrollbar {
+    background-color: transparent;
+    width: 12px;
+    border-radius: 10px;
+  }
+  
+  #scrollbar5::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+  
+  #scrollbar5::-webkit-scrollbar-thumb {
+    background-image: -webkit-linear-gradient(
+      bottom,
+      #0962b3 50%,
+      #040f3b 100%
+    );
+    border-radius: 10px;
+  }

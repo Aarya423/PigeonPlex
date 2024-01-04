@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PigeonPlex - Admin</title><meta name="description" content="Movie Theater">
+    <meta name="author" content="Sridhar Patel, Ohm Patel, Jeffano John, Aarya Patel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/admin.css') }}">
+</head>
+<body class="scrollbar" id="scrollbar5">
+    <div class="header">
+        <h1>ADMIN</h1>
+        <button id="logout" class="logout-button">LOG OUT</button>
+    </div>
+    
+    <div class="container">
+        <h2>Movies List</h2>
+        <label>Find Movie:</label>
+        <input class="search-field" type="text" id="movie-title">
+        <button class="search-button" id="search-movie">SEARCH</button>
+    
+        <div class="scrollable-table scrollbar" id="scrollbar5">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Movie ID</th>
+                        <th>Movie Name</th>
+                    </tr>
+                </thead>
+                <tbody id="movieSearchResult">
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="additional-feautes scrollbar" id="scrollbar5">
+            <label>Total Sales for selected MovieID:</label>
+            <!-- <input class="search-field" type="text" id="movieID">
+            <button class="search-button" id="view-sales">VIEW</button> -->
+            <div class="scrollable-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Movie Name</th>
+                            <th>Total Sales ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="movieSalesResult">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <div class="additional-feautes scrollbar" id="scrollbar5">
+            <label>Users List for movie Purchase:</label>
+            <!-- <input class="search-field" type="text" id="listView">
+            <button class="search-button" id="view-list">VIEW</button> -->
+            <div class="scrollable-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody id="movieUserResult">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Add Movie</h2>
+    
+        <div class="form-row">
+            <div class="form-group">
+                <label for="movie-title">Title:</label>
+                <input class="addMovie-field" type="text" id="movieTitle">
+            </div>
+            <div class="form-group">
+                <label for="movie-genre">Genre:</label>
+                <input class="addMovie-field" type="text" id="movie-genre">
+            </div>
+            <div class="form-group">
+                <label for="movie-description">Description:</label>
+                <input class="addMovie-field" type="text" id="movie-description">
+            </div>
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group">
+                <label for="movie-director">Director:</label>
+                <input class="addMovie-field" type="text" id="movie-director">
+            </div>
+            <div class="form-group">
+                <label for="movie-cast">Cast:</label>
+                <input class="addMovie-field" type="text" id="movie-cast">
+            </div>
+            <div class="form-group">
+                <label for="movie-duration">Duration:</label>
+                <input class="addMovie-field" type="text" id="movie-duration">
+            </div>
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group">
+                <label for="movie-rating">Rating:</label>
+                <input class="addMovie-field" type="text" id="movie-rating">
+            </div>
+            <div class="form-group">
+                <label for="movie-trailer">Trailer:</label>
+                <input class="addMovie-field" type="text" id="movie-trailer">
+            </div>
+            <div class="form-group">
+                <label for="movie-image">Image:</label>
+                <input class="addMovie-field" type="text" id="movie-image">
+            </div>
+        </div>
+    
+        <button class="add-button" id="addMovie">ADD</button>
+    </div>
+    
+    <div class="container">
+        <h2>Manage Schedule</h2>
+    
+        <div class="schedule-functions">
+            <h3>Add Schedule</h3>
+                <div class="schedule-row">
+                    <div class="form-group">
+                        <label>Movie ID:</label>
+                        <input class="movieID-field" type="text" id="movie-id">
+                    </div>
+    
+                    <div class="schedule-group">
+                        <label>Date:</label>
+                        <input type="date" class="date-format" id="add-movie-date">
+                    </div>
+                </div>
+    
+                <button class="add-button" id="add-schedule">ADD</button>
+        </div>
+    
+        <div class="schedule-functions">
+            <h3>Display Schedule</h3>
+                <label>Enter Movie ID:</label>
+                <input class="search-field" type="text" id="search-movie-id">
+                <button class="search-button" id="get-movie-id">SEARCH</button>
+    
+                <div class="scrollable-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Movie ID</th>
+                                <th>Movie Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="displaySchedule">
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+    
+    <div class="container scrollbar" id="scrollbar5">
+        <h2>Users</h2>
+    
+        <div>
+            <label>View Users List:</label>
+            <button class="search-button" id="viewUsers">VIEW</button>
+        </div>
+    
+        <div class="displayTotalCount">
+            <label>Total Count:</label>
+        </div>
+    
+    
+        <div class="scrollable-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>UserID</th>
+                        <th>Username</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="usersOutput">
+                </tbody>
+            </table>
+        </div>
+    
+        <label>Delete User:</label>
+        <input class="search-field" type="text" id="userName">
+        <button class="search-button" id="delete-user">DELETE</button>
+    
+        <div class="additional-feautes">
+            <div>
+                <label>Delete Inactive Users:</label>
+                <button class="search-button" id="deleteUsers">DELETE</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Additional Features</h2>
+        <div class="additional-feautes">
+            <label>Public Service Announcement Addition:</label>
+            <button class="search-button" id="addAnnouncement">ADD</button>
+        </div>
+    
+        <div class="additional-feautes">
+            <label>Public Service Announcement Deletion:</label>
+            <button class="search-button" id="deleteAnnouncement">DELETE</button>
+        </div>
+    
+    </div>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="{{ url_for('static',filename='scripts/admin.js') }}"></script>
+</body>
+</html>

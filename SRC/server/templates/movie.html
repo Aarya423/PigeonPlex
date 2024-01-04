@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>PigeonPlex</title>
+        <meta name="description" content="Movie Theater">
+        <meta name="author" content="Sridhar Patel, Ohm Patel, Jeffano John, Aarya Patel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/movie.css') }}">
+    </head>
+    <body class="scrollbar" id="scrollbar5">
+        <div class="navbar">
+            <div class="left-image logo-img">
+                <img src="{{ url_for('static',filename='img/logo.png') }}" alt="Left Image" id="logo">
+            </div>
+            <div class="right-image">
+                <img src="{{ url_for('static',filename='img/accountImg.png') }}" alt="Right Image" id="account">
+                <button class="logout-btn" id="logout">Logout</button>
+            </div>
+        </div>
+        <div class="titleDescription">
+            <h1 id="title">Title</h1>
+        </div>
+        <div class="container">
+            <div class="column">
+                <img id="image" src="img/test.jpg" alt="Image">
+            </div>
+            <div class="column text-column">
+                <div class="border">
+                    <p id="description">Movie description</p>
+                    <h5>CAST</h5>
+                    <h4 id="cast">Cast</h4>
+                    <h5>DIRECTOR</h5>
+                    <h4 id="director">Director</h4>
+                    <h5>DURATION</h5>
+                    <h4 id="duration">Duration</h4>
+                    <h5>GENRE</h5>
+                    <h4 id="genre">Genre</h4>
+                    <h5>RATING</h5>
+                    <h4 id="rating">Rating</h4>
+                    <a id="trailerLink" target="_blank"><button id="trailer">TRAILER</button></a>
+                </div>
+                
+                <div class="tickets">
+                    <h2>TICKETS</h2>
+                    <div id="dates">
+                        <select id="dateDropDown" class="dropDown"></select>
+                        <label for="time">Choose a time:</label><br>
+                        <select name="time" id="time" class="dropDown">
+                            <option value="10 A.M.">10 A.M.</option>
+                            <option value="2 P.M.">2 P.M.</option>
+                            <option value="7 P.M.">7 P.M.</option>
+                        </select>
+                    </div>
+                    <h3 id="seatCount">Quantity</h3>
+                    <div class="input-group">
+                        <button id="decrement" class="counterBtn">-</button>
+                        <input type="number" id="input" value="0" readonly class="counter">
+                        <button id="increment" class="counterBtn">+</button>
+                    </div>
+                    <button id="purchase" class="purchase-btn">Purchase</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="module" src="{{ url_for('static',filename='scripts/movie.js') }}"></script>
+    </body>
+</html>

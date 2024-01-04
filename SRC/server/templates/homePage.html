@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>PigeonPlex</title>
+        <meta name="description" content="Movie Theater">
+        <meta name="author" content="Sridhar Patel, Ohm Patel, Jeffano John, Aarya Patel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/homePage.css') }}">
+    </head>
+    <body class="scrollbar" id="scrollbar5">
+        <div class="navbar">
+            <div class="center-image logo-img">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Center Image" id="logo">
+            </div>
+            <div class="right-image">
+                <img src="{{ url_for('static', filename='img/accountImg.png') }}" alt="Right Image" id="account">
+                <button class="logout-btn" id="logout">Logout</button>
+            </div>
+        </div>
+        <h1 class="featuredTitle">Featured Movies</h1>
+        <div class="featured">
+            <div class="movieShowCase">
+                <ul class="moviesList" id="moviesList">
+                </ul>
+            </div>
+        </div>
+        <div class="movieSearch">
+            <h1 class="text">Search</h1>
+            <div class="search">
+                <h2 class="text">Movie: </h2>
+                <input type="text" class="movieInput" name="search" id="movieSearch" placeholder="Movie Name...">
+                <h2 class="text">Date: </h2>
+                <input type="date" class="dateInput" id="movieDate" name="movieDate" required pattern="\d{4}-\d{2}-\d{2}">
+                <button class="search-btn" id="searchBtn">Search</button>
+            </div>
+            <label class="errorText" id="error"></label>
+            <div class="movieShowCase">
+                <ul class="moviesListOutput" id="moviesListOutput">
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>PigeonPlex Powered By: Team 10</p>
+        </footer>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="module" src="{{ url_for('static',filename='scripts/homePage.js') }}"></script>
+    </body>
+</html>
